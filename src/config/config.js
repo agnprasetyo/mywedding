@@ -37,7 +37,7 @@ const config = {
         // First event name
         title: "Akad Nikah",
         // Event date (format: YYYY-MM-DD)
-        date: "2024-12-24",
+        date: "2025-12-14",
         // Start time (format: HH:MM)
         startTime: "16:16",
         // End time (format: HH:MM)
@@ -50,7 +50,7 @@ const config = {
       {
         // Second event name
         title: "Resepsi Nikah",
-        date: "2024-12-24",
+        date: "2025-12-14",
         startTime: "16:16",
         endTime: "17:30",
         location: "Grand Ballroom, Hotel Majesty",
