@@ -1,4 +1,14 @@
 const config = {
+  // Maintenance mode settings
+  maintenance: {
+    // Set to true to enable maintenance mode
+    enabled: true,
+    // Message to show during maintenance
+    message: "Website sedang dalam perawatan. Kami akan kembali segera!",
+    // Optional: contact information during maintenance
+    contact: "Hubungi kami di: +62-xxx-xxx-xxxx"
+  },
+  
   data: {
     // Main invitation title that appears on the page
     title: "Pernikahan Agung & Chindy",
