@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "maintenance:on": "node scripts/toggle-maintenance.js on",
+    "maintenance:off": "node scripts/toggle-maintenance.js off",
+    "maintenance:status": "node scripts/toggle-maintenance.js status"
   },
   "dependencies": {
     "clsx": "^2.1.1",
