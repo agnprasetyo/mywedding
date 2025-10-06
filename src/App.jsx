@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Layout from '@/components/Layout';
 import MainContent from '@/pages/MainContent';
 import LandingPage from '@/pages/LandingPage';
+import MaintenancePage from '@/pages/MaintenancePage';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import config from '@/config/config';
 
@@ -27,6 +28,22 @@ import config from '@/config/config';
  */
 function App() {
   const [isInvitationOpen, setIsInvitationOpen] = useState(false);
+  
+  // Check if maintenance mode is enabled
+  if (config.maintenance.enabled) {
+    return (
+      <HelmetProvider>
+        <Helmet>
+          <title>Maintenance - {config.data.title}</title>
+          <meta name="description" content="Website sedang dalam perawatan" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="theme-color" content="#FDA4AF" />
+        </Helmet>
+        <MaintenancePage />
+      </HelmetProvider>
+    );
+  }
+  
   return (
     <HelmetProvider>
       <Helmet>
